@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Constructora de La Pampa. Proyectos Llave en Mano. Wood Frame. CASAS A MEDIDA">
+    <title>ADS Construcción en Seco | Casas de Madera | La Pampa | La Plata</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="nav fixed" id="menu">
+                <a href="/"><img src="/assets/logo-ads.png" alt="logo_ads" class="main__logo"></a>
+                <ul>
+                    <li><a role="button" onclick="onNav('llave-en-mano')">Casas llave en mano</a></li>
+                    <li><a role="button" onclick="onNav('servicios')">Servicios</a></li>
+                    <li><a role="button" onclick="onNav('obras')">Obras</a></li>
+                    <li><a role="button" onclick="onNav('nosotros')">Nosotros</a></li>
+                    <li><a role="button" onclick="onNav('contacto')">Contacto</a></li>
+                    <li id="iconos">
+                        <a href="https://www.facebook.com/ADSconstruccionpampeana" target="_blank">
+                            <img src="/assets/icons/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/adsconstruccion/" target="_blank">
+                            <img src="/assets/icons/instagram.svg" alt="instagram"></a>
+                        <a
+                            href="mailto:ads.construccionpampeana@gmail.com?Subject=Me%20interesa%20saber%20más%20para%20construir">
+                            <img src="/assets/icons/gmail.svg" alt="gmail"></a>
+                    </li>
+                </ul>
+                <div class="nav__hamburger" onclick="myMenu()" id="menuClose">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <section id="inicio">
+            <div class="homeText">
+                <h1>Construcción en Seco</h1>
+                <p>Viviendas listas para habitar. Llevamos a cabo tu proyecto llave en mano con sistema
+                    <span>Wood Frame</span>. Disfrutá de tu nuevo hogar sin complicaciones.
+                </p>
+                <a class="btn btn-action"
+                    href="mailto:ads.construccionpampeana@gmail.com?Subject=Me%20interesa%20saber%20más%20para%20construir">
+                    <span>¡Quiero construir mi proyecto! &#129122;</span></a>
+            </div>
+            <div class="control">
+                <button class="btn btn-number active" onclick="slide(1)">01</button>
+                <button class="btn btn-number" onclick="slide(2)">02</button>
+                <button class="btn btn-number" onclick="slide(3)">03</button>
+            </div>
+            <div class="slide fade">
+                <picture>
+                    <source srcset="/assets/casa-construccion-en-seco.webp" type="image/webp">
+                    <img src="/assets/casa-construccion-en-seco.jpg" loading="lazy" alt="construcción en seco La Pampa">
+                </picture>
+            </div>
+            <div class="slide fade">
+                <picture>
+                    <source srcset="/assets/construccion-en-seco-la-pampa.webp" type="image/webp">
+                    <img src="/assets/construccion-en-seco-la-pampa.jpg" loading="lazy"
+                        alt="construcción en seco La Pampa">
+                </picture>
+            </div>
+            <div class="slide fade">
+                <picture>
+                    <source srcset="/assets/casa-construccion-en-seco-la-pampa.webp" type="image/webp">
+                    <img src="/assets/casa-construccion-en-seco-la-pampa.jpg" loading="lazy"
+                        alt="construcción en seco La Pampa">
+                </picture>
+            </div>
+        </section>
+        <section id="llave-en-mano">
+            <div class="llaveEnMano container">
+                <div class="llaveEnMano__title__light">Casas Llave en Mano</div>
+                <h2 class="llaveEnMano__title">Casas Llave en Mano</h2>
+                <div class="llaveEnMano__paragraph">
+                    <p>En <span>ADS Construcción en Seco</span>, fusionamos la tradición artesanal con la eficiencia
+                        moderna,
+                        enfocándonos en la construcción en seco y, especialmente, en el sistema wood frame.
+                        Ofrecemos soluciones integrales, que te permiten tener tu vivienda llave en mano en 60 días.</p>
+                </div>
+                <picture>
+                    <source srcset="/assets/ads-construccion-llave-en-mano.webp" type="image/webp">
+                    <img src="/assets/ads-construccion-llave-en-mano.jpg" loading="lazy"
+                        alt="construcción llave en mano">
+                </picture>
+                <h2 class="llaveEnMano__title__detail">¿Qué incluye una casa llave en mano?*</h2>
+                <p class="llaveEnMano__paragraph__detail">Planos - Platea - Estructura de madera - Aislantes -
+                    Revestimiento interior y exterior -
+                    Techo de chapa - Cielorraso de machimbre - Pisos - Aberturas - Instalaciones sanitarias -
+                    Instalaciones de gas - Instalaciones eléctricas - Instalación de artefactos de cocina -
+                    Artefactos sanitarios - Pintura interior blanca
+                </p>
+                <p class="llaveEnMano__paragraph__detail"><small>*Cada hogar o construcción puede ser personalizada de
+                        acuerdo a las necesidades del cliente.</small></p>
+            </div>
+            <div class="container"><a class="btn btn-action container"
+                    href="mailto:ads.construccionpampeana@gmail.com?Subject=Me%20interesa%20saber%20más%20para%20construir">
+                    <span>¡Quiero construir mi proyecto! &#129122;</span></a></div>
+        </section>
+
+        <section id="servicios">
+            <div class="servicios">
+                <div class="servicios__card">
+                    <div class="servicios__container__description">
+                        <span>¿Dónde construimos?</span>
+                        <p class="servicios__description">Nuestras obras dicen presente en localidades pampeanas como en
+                            General San Martín,
+                            Bernasconi, Jacinto Aráuz, Guatraché, General Campos, Colonia Santa Teresa y Macachín.
+                            En La Plata, construimos en Melchor Romero, Parque Sicardi, Berisso y City Bell.
+                        </p>
+                    </div>
+                    <picture class="servicios__image">
+                        <source srcset="/assets/construccion-wood-frame-la-pampa.webp" type="image/webp">
+                        <img src="/assets/construccion-wood-frame-la-pampa.jpg" loading="lazy"
+                            alt="construcción llave en mano">
+                    </picture>
+                </div>
+
+                <div class="servicios__card">
+                    <div class="servicios__container__description">
+                        <p class="servicios__description">Hacemos realidad todo tipo de proyectos, desde viviendas
+                            familiares hasta garajes,
+                            quinchos, decks y ampliaciones o reformas.</p>
+                        <p class="servicios__description">Nuestra presencia se ha consolidado con
+                            más de 50 construcciones concretadas en La Pampa y en La Plata y sus alrededores.</p>
+                    </div>
+                    <picture class="servicios__image">
+                        <source srcset="/assets/construccion-wood-frame-pintura.webp" type="image/webp">
+                        <img src="/assets/construccion-wood-frame-pintura.jpg" loading="lazy"
+                            alt="construcción llave en mano">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section id="obras">
+            <div class="obras container">
+                <h2>Construcción en Seco La Pampa</h2>
+                <p>Algunas de Nuestras Obras en La Pampa</p>
+                <div class="obras__button__prev a"><button class="btn btn-prev" id="prev"><span>
+                            << /span></button></div>
+                <div class="obras__button__next a"><button class="btn btn-next" id="next"><span>></span></button></div>
+                <div id="imagen" loading="lazy" alt="construcción llave en mano"></div>
+                <h2>Construcción en Seco La Plata</h2>
+                <p>Algunas de Nuestras Obras en La Plata</p>
+                <div class="obras__button__prev b"><button class="btn btn-prev" id="prevB"><span>
+                            << /span></button></div>
+                <div class="obras__button__next b"><button class="btn btn-next" id="nextB"><span>></span></button></div>
+                <div id="imagenB" loading="lazy" alt="construcción llave en mano"></div>
+            </div>
+        </section>
+
+        <section id="nosotros">
+            <div class="nosotros container">
+                <div class="nosotros__title__light">Sobre nosotros</div>
+                <div class="nosotros__title">Sobre nosotros</div>
+                <div class="nosotros__paragraph">
+                    <p>Somos ADS Construcción en Seco, una pyme de La Pampa, nacida en una carpintería de madera en
+                        General San Martín.
+                        En 2018, Aníbal Darío Scheck, artesano de la madera con más de 40 años de experiencia,
+                        comenzó a desarrollar un nuevo emprendimiento.
+                        Tomó nota de la demanda de viviendas insatisfecha y le dio forma a las primeras casas con
+                        estructura de madera,
+                        construidas, por primera vez, con manos locales. </p>
+                </div>
+                <picture class="nosotros__image">
+                    <source srcset="/assets/ads-construccion-en-seco.webp" type="image/webp">
+                    <img src="/assets/ads-construccion-en-seco.jpg" loading="lazy" alt="construcción llave en mano">
+                </picture>
+
+
+                <div class="nosotros__paragraph__b">
+                    <p>Propusimos a nuestros clientes y vecinos, la posibilidad de contar con viviendas de rápida
+                        construcción,
+                        con mejor calidad y eficiencia que las conocidas hasta ese momento. A pesar de la inicial
+                        desconfianza
+                        en las "casas prefabricadas", la calidad de nuestros proyectos habló por sí misma, y la
+                        comunidad respaldó nuestro enfoque.</p>
+                </div>
+
+                <picture class="nosotros__image__b">
+                    <source srcset="/assets/ads-construccion-en-seco-la-plata.webp" type="image/webp">
+                    <img src="/assets/ads-construccion-en-seco-la-plata.jpg" loading="lazy"
+                        alt="construcción llave en mano">
+                </picture>
+
+                <div class="nosotros__paragraph__c">
+                    <p>En 2021, expandimos nuestras operaciones, trabajando desde entonces con dos equipos,
+                        uno General San Martín y otro en La Plata. Mantenemos nuestras raíces en la carpintería original
+                        y operamos con instalaciones y equipos dedicados en ambas ubicaciones.
+                        Nuestro compromiso es seguir entregando calidad, incorporando nuevas tecnología
+                        constructivas y eficiencia en cada proyecto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="wood-frame">
+            <div class="woodFrame">
+                <ul class="acordeon">
+                    <li>
+                        <h2 class="acordeon__title">¿Qué es el Sistema Wood Frame?</h2>
+                        <p>Wood Frame, también conocido como Wood Framing, es un método constructivo que emplea
+                            una estructura de madera. Este sistema se encuentra comprendido dentro
+                            de la "construcción en seco", ya que prescinde del uso de agua. Considerado un
+                            método tradicional en Estados Unidos, desde ADS lo incorporamos
+                            teniendo en cuenta las necesidades y recursos locales y nacionales.</p>
+                    </li>
+
+                    <li>
+                        <h2 class="acordeon__title">Wood Frame: Construcción Sustentable</h2>
+                        <div>
+                            <p>La madera, uno de los primeros materiales de construcción en la historia,
+                                está recuperando su protagonismo en el mundo de la construcción. La arquitectura
+                                contemporánea abraza la construcción en madera como solución para combatir el déficit
+                                habitacional.</p>
+                            <p>La madera se integra perfectamente con nuevos materiales,
+                                acelerando hasta un 60% el proceso constructivo. Su uso está ampliamente
+                                difundido en los países escandinavos, Canadá, Estados Unidos y Alemania.</p>
+                            <p>Este recurso es renovable, reciclable y neutral o negativo en carbono.
+                                Su industrialización impulsa economías regionales y contribuye a la reforestación.
+                                Además, la madera no genera desperdicios, ya que todo se utiliza con propósitos
+                                específicos.</p>
+                            <p>En términos de eficiencia energética, la madera reduce los costos en su producción
+                                y en el resultado final. Su naturaleza aislante mantiene la temperatura interna,
+                                ahorrando energía eléctrica y gas.</p>
+                            <p>Los beneficios ambientales de construir en madera pueden observarse más claramente en
+                                estos gráficos comparativos:</p>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="/assets/consumo-energia.webp" type="image/webp">
+                                <img src="/assets/consumo-energia.jpg" loading="lazy" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="/assets/estudio-construccion-en-madera.webp" type="image/webp">
+                                <img src="/assets/estudio-construccion-en-madera.jpg" loading="lazy" alt="">
+                            </picture>
+                            <small>Fuente: Cámara de la Madera Argentina.</small>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="acordeon-2">
+                    <li class="acordeon__items">
+                        <h2 class="acordeon__title">Ventajas de las Casas de Madera</h2>
+                        <p>La construcción en madera, particularmente el sistema Wood Frame, presenta una serie de
+                            ventajas que van más allá de su aspecto sustentable. A continuación, te contamos cómo este
+                            sistema contribuye a la eficiencia, rapidez y sostenibilidad en la construcción.</p>
+
+                        <ul>
+                            <li class="acordeon__item">
+                                <h3 class="acordeon__title">Construcción Industrializada Rápida y Económica</h3>
+                                <p>El Wood Frame destaca por su eficiencia en el tiempo de construcción. Al utilizar
+                                    un proceso industrializado, se reduce significativamente el tiempo necesario para
+                                    completar una vivienda. Esta rapidez no solo significa un hogar más rápido,
+                                    sino también menores costos asociados a mano de obra y gestión del proyecto.</p>
+                            </li>
+
+                            <li class="acordeon__item">
+                                <h3 class="acordeon__title">Sistema Multicapas: Máxima Aislación Termoacústica</h3>
+                                <p>Una de las características fundamentales del Wood Frame es su sistema multicapas.
+                                    Esta estructura no solo brinda solidez, sino que actúa como un escudo contra
+                                    las variaciones térmicas y sonoras.
+                                    Disfrutá de un hogar que se mantiene fresco en verano,
+                                    cálido en invierno, y que aísla eficientemente del ruido exterior.</p>
+                            </li>
+
+                            <li class="acordeon__item">
+                                <h3 class="acordeon__title">Construcción sin Errores</h3>
+                                <p>El sistema Wood Frame garantiza una construcción precisa y sin errores.
+                                    Olvidate de problemas de falsa escuadra. La metodología industrializada
+                                    y los controles de calidad integrados minimizan los errores, asegurando un
+                                    resultado final que cumple con las más altas expectativas.</p>
+                            </li>
+
+                            <li class="acordeon__item">
+                                <h3 class="acordeon__title">Presupuestos Exactos</h3>
+                                <p>En proyectos Wood Frame, la planificación es clave. Desde el principio,
+                                    cada aspecto del proyecto se detalla, lo que se traduce en presupuestos exactos.
+                                    Al cerrar el contrato, conocés con precisión los costos involucrados,
+                                    evitando sorpresas desagradables y permitiéndote gestionar tu inversión de manera
+                                    más efectiva.
+                                </p>
+                            </li>
+
+                            <li class="acordeon__item">
+                                <h3 class="acordeon__title">Optimiza tus Ambientes: Más Espacio Interior</h3>
+                                <p>El diseño del Wood Frame permite optimizar el espacio interior al máximo.
+                                    Con una estructura más delgada que las tradicionales, conseguís más metros cuadrados
+                                    habitables.
+                                    Aprovechá cada rincón de tu hogar sin sacrificar resistencia ni calidad.
+                                </p>
+                            </li>
+
+                            <li class="acordeon__item">
+                                <h3 class="acordeon__title">Fácil de Mantener y Reformar</h3>
+                                <p>La versatilidad del Wood Frame no se limita a la construcción inicial.
+                                    Su flexibilidad facilita futuras reformas, reparaciones y modificaciones.
+                                    Es simple acceder a las conexiones internas y solucionar problemas en cañerías,
+                                    sistemas eléctricos o de gas.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="title">¡Contactanos!</div>
+            <div class="form container">
+                <form action="post">
+                    <div>
+                        <small></small>
+                        <input type="text" name="name" id="name" required><span class="float__bar"></span>
+                        <label for="name">Nombre</label>
+                    </div>
+
+                    <div>
+                        <small></small>
+                        <input type="text" name="lastName" id="lastName" required><span class="float__bar"></span>
+                        <label for="lastName">Apellido</label>
+                    </div>
+
+                    <div>
+                        <small></small>
+                        <input type="number" name="cellphone" id="cellphone" required><span class="float__bar"></span>
+                        <label for="cellphone">Celular</label>
+                    </div>
+
+                    <div>
+                        <small></small>
+                        <input type="email" name="email" id="email" required><span class="float__bar"></span>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div>
+                        <small></small>
+                        <input type="text" name="city" id="city" required><span class="float__bar"></span>
+                        <label for="city">Localidad</label>
+                    </div>
+
+                    <div>
+                        <small></small>
+                        <input type="text" name="subject" id="subject" required><span class="float__bar"></span>
+                        <label for="subject">Asunto</label>
+                    </div>
+
+                    <div>
+                        <small></small>
+                        <textarea name="message" id="message" required></textarea><span class="float__bar"></span>
+                        <label for="message">Mensaje</label>
+                    </div>
+
+                    <div class="button">
+                        <a type="submit" class="btn btn-send"><span>Enviar</span></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div id="iconos">
+                    <a href="https://www.facebook.com/ADSconstruccionpampeana" target="_blank">
+                        <img src="/assets/icons/facebook.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/adsconstruccion/" target="_blank">
+                        <img src="/assets/icons/instagram.svg" alt="instagram"></a>
+                    <a
+                        href="mailto:ads.construccionpampeana@gmail.com?Subject=Me%20interesa%20saber%20más%20para%20construir">
+                        <img src="/assets/icons/gmail.svg" alt="gmail"></a>
+                </div>
+                <div class="footer__developer">
+                    <p>&copy; ADS - 2023 | Desarrollado por <a href="https://github.com/flavius87"
+                            target="_blank">flavius</a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="/js/menu.js"></script>
+    <script src="/js/slide.js"></script>
+    <script src="/js/acordeon.js"></script>
+</body>
+
+</html>
