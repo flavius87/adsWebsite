@@ -48,18 +48,15 @@ h1 {
 h2 {
     text-transform: uppercase;
     font-size: 1em;
-    margin-top: 2%;
 }
 
 h3 {
     text-transform: uppercase;
     font-size: 0.8em;
-    margin-top: 2%;
 }
 
 p {
     font-size: 13px;
-    margin-top: 2%;
     font-weight: 300;
 }
 
@@ -312,11 +309,16 @@ header a {
     padding-top: 1em;
 }
  
+#llave-en-mano .llaveEnMano__title__light {
+    position: absolute;
+    color: var(--ads-wood-light);
+    font-size: 31px;
+}
+
 .llaveEnMano__title {
     position: absolute;
     color: var(--ads-main);
-    padding-right: 8%;
-    margin-top: 1.4em;
+    padding-top: 1.3em;
 }
 
 #llave-en-mano .llaveEnMano__paragraph {
@@ -325,18 +327,12 @@ header a {
     color: var(--ads-main);
 }
 
-#llave-en-mano .llaveEnMano__title__light {
-    position: absolute;
-    color: var(--ads-wood-light);
-    font-size: 31px;
-}
-
 .llaveEnMano__title__detail, .llaveEnMano__paragraph__detail {
     color: var(--ads-main);
 } 
 
 .llaveEnMano__title__detail {
-    padding-top: 8%;
+    padding-top: 2%;
 }
 
 /* Servicios */
@@ -348,42 +344,35 @@ header a {
 
 .servicios__card {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     background-color: var(--ads-orange);
     border-radius: 4px;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 2px 3px 0 rgba(39, 39, 39, 0.24), 0 8px 30px 0 rgba(56, 56, 56, 0.19);
-    margin: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#servicios .servicios__title {
+    padding-bottom: 1em;
 }
 
 .servicios__image{
-    grid-column: 1 / 2;
     grid-row: 1;
     overflow: hidden;
-    height: 200px;
+    width: 100%;
 }
 
 .servicios__image img{
-    height: inherit;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 4px 0px 0px 4px;
-
-    transform-origin: center;
-    transform: scale(var(--img-scale));
-    transition: transform 0.4s ease-in-out;
 }
 
 .servicios__container__description {
-    padding-left: 1em;
-    padding-right: 1em;
-    --img-scale: 1.001;
-}
-
-.servicios__description {
-    grid-column: 2 / 2;
+    padding: 1em;
 }
 
 /* Obras */
@@ -399,6 +388,7 @@ header a {
 }
 
 #obras #imagen {
+    margin-bottom: 1em;
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -408,6 +398,7 @@ header a {
 }
 
 #obras #imagenB {
+    margin-bottom: 1em;
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -482,7 +473,7 @@ header a {
 .nosotros__title {
     position: absolute;
     text-transform: uppercase;
-    padding-top: 6%;
+    padding-top: 1.3em;
 }
 
 .nosotros .nosotros__paragraph {
@@ -491,13 +482,15 @@ header a {
 }
 
 .nosotros__image img {
-    padding-top: 1em;
     width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .nosotros__image__b img {
-    padding-top: 1em;
     width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #nosotros .nosotros__paragraph__b, .nosotros__paragraph__c {
@@ -834,4 +827,33 @@ footer #iconos img {
 
 .footer__developer a:hover {
     color: var(--ads-light);
+}
+
+@media (min-width:768px){ 
+
+    /* obras */
+    #obras #imagen {
+        height: 800px;
+    }
+
+    #obras #imagenB {
+        height: 800px;
+    }
+
+    /* contacto */
+    #contacto .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contacto form {
+        position: relative;
+        margin: .7em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
