@@ -31,7 +31,7 @@ li {
   
 a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -56,12 +56,17 @@ h3 {
 }
 
 p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
+    line-height: 1.5;
 }
 
 small {
     font-size: 10px;
+}
+
+span {
+    font-weight: 500;
 }
 
 .container {
@@ -71,16 +76,37 @@ small {
     padding: 8px 0;
 }
 
-.fade{
+.shadow{
     animation-name: fade;
     animation-duration: .8s;    
 }
-
 
 @keyframes fade {
     from {opacity: .4;}
     to{opacity:1;}
 }
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn .5s ease-in 1 forwards;
+  }
+
+.fadeOut {
+    opacity: 1;
+    animation: fadeOut .5s ease-out 1 forwards;
+}
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
 
 /* Main */
 main {
@@ -123,11 +149,11 @@ header a {
     align-items: center;
     display: flex;
     padding: 10px;
-    height: 12vh;
+    height: 15vh;
 }
 
 .nav .main__logo {
-    width: 140px;
+    width: 125px;
     z-index: 1;
     position: relative;
 }
@@ -261,9 +287,10 @@ header a {
 }
 
 .btn-action {
-    display: inline-block;
-    height: 30px;
-    width: 200px;
+    display: grid;
+    align-items: center;
+    height: 35px;
+    width: 260px;
     text-align: center;
     cursor: pointer;
 }
@@ -300,13 +327,12 @@ header a {
     grid-area: llave-en-mano;
 }
 
-#llave-en-mano small {
-    margin-bottom: 2%;
-}
-
-#llave-en-mano img {
-    width: 100%;
+#llave-en-mano .llaveEnMano__img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
  
 #llave-en-mano .llaveEnMano__title__light {
@@ -325,14 +351,6 @@ header a {
     margin-top: 2.8em;
     margin-bottom: 2%;
     color: var(--ads-main);
-}
-
-.llaveEnMano__title__detail, .llaveEnMano__paragraph__detail {
-    color: var(--ads-main);
-} 
-
-.llaveEnMano__title__detail {
-    padding-top: 2%;
 }
 
 /* Servicios */
@@ -464,6 +482,16 @@ header a {
     color: var(--ads-main);
 }
 
+.nosotros {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
 .nosotros__title__light {
     position: absolute;
     color: var(--ads-wood-light);
@@ -477,24 +505,20 @@ header a {
 }
 
 .nosotros .nosotros__paragraph {
+    display: grid;
     margin-top: 2.8em;
-    margin-bottom: 2%;
 }
 
-.nosotros__image img {
+.nosotros__image {
+    grid-row: 1;
+    overflow: hidden;
     width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
-.nosotros__image__b img {
+.nosotros__card img {
     width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-#nosotros .nosotros__paragraph__b, .nosotros__paragraph__c {
-    margin-bottom: 2%;
+    padding-top: 1vw; 
+    padding-bottom: 1vw; 
 }
 
 /* Wood frame */
@@ -509,8 +533,7 @@ header a {
     align-content: center;
 }
 
-#wood-frame img {
-    width: 100%;
+.woodFrame img {
     background-size: cover;
     background-position: center;
 }
@@ -575,7 +598,7 @@ header a {
 }
 
 .acordeon > li > div {
-    padding: 1em;
+    padding: 2em;
     background-color: #fff;
     color: var(--ads-wood);
 }
@@ -595,8 +618,9 @@ header a {
     position: relative;
     vertical-align: middle;
     border: 1px solid var(--ads-brown);
-    height: calc( var(--title-size) + (var(--title-padding) * 2.4) );
+    height: calc( var(--title-size) + (var(--title-padding) * 2.1) );
     overflow: hidden;
+    cursor: pointer;
 }
 
 .acordeon-2 > .acordeon__items:not(:last-child) {
@@ -622,6 +646,7 @@ header a {
     color: #fff;
     position: absolute;
     right: 5px;
+    top: 16px; 
     font-size: 1.5em;
 }
 
@@ -629,8 +654,9 @@ header a {
     position: relative;
     vertical-align: middle;
     border: 1px solid var(--ads-brown);
-    height: calc( var(--title-size) + (var(--title-padding) * 2.4) );
+    height: calc( var(--title-size) + (var(--title-padding) * 2.1) );
     overflow: hidden;
+    cursor: pointer;
 }
 
 .acordeon-2 .acordeon__item::before {
@@ -784,7 +810,7 @@ textarea:focus~.float__bar::before{
     display: grid;
     height: 30px;
     width: 200px;
-    margin: 2em;
+    margin: 1.3em;
     position: relative;
     align-items: center;
     text-align: center;
@@ -831,6 +857,28 @@ footer #iconos img {
 
 @media (min-width:768px){ 
 
+    .container {
+        width: 85%;
+    }
+
+    /* Llave en mano */
+    #llave-en-mano {
+        object-position: center;
+    }
+
+    #llave-en-mano img {
+        object-fit: contain;
+    }
+
+    .llaveEnMano {
+        width: 65%;
+        align-content: center;
+    }
+
+    .servicios {
+        width: 80%;
+    }
+
     /* obras */
     #obras #imagen {
         height: 800px;
@@ -856,4 +904,178 @@ footer #iconos img {
         justify-content: center;
         align-items: center;
     }
+}
+
+@media (min-width:1024px){
+
+    .nav {
+        --state-open: scale(0);
+        --state-menu: translate(0);
+        background-color: #fff;
+        justify-content: space-around;
+    }
+
+    .nav ul {
+        padding: 0;
+        margin: 20px;
+        position: relative;
+        gap: 1em;
+        grid-auto-flow: column;
+
+        transform: unset;
+    }
+
+    .nav__hamburger {
+        opacity: 0;
+    }
+
+    .menuOpen {
+        --state-close: scale(0);
+    }
+    
+    .nav li {
+        transition: 0.2s ease-out;
+    }    
+   
+    .slide {
+        height: 95vh;
+    }
+
+    #llave-en-mano {
+        height: 100%;
+    }
+
+    .llaveEnMano {
+        width: 50%;
+    }
+    
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+        width: 95%;
+    }
+
+    .servicios__card {
+        align-items: normal;
+    }
+
+    #obras {
+        justify-content: center;
+        grid-template-columns: 600px;
+    }
+
+    #obras #imagen {
+        height: 500px;
+    }
+
+    #obras #imagenB {
+        height: 500px;
+    }
+
+    .nosotros {
+        width: 95%;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+} 
+
+@media (min-width: 1280px) {
+
+    #inicio h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    .btn-action {
+        height: 40px;
+        width: 300px;
+    }
+     
+    .btn-number {
+        height: 40px;
+        width: 60px;
+    }    
+
+    .llaveEnMano__title {
+        padding-top: .7em;
+    }
+
+    #servicios {
+        height: 600px;
+   }
+
+   #servicios .servicios__title {
+        font-size: 22px;
+    }
+
+   .servicios__card {
+        height: 47%;
+   }
+
+   .nosotros__card {
+        grid-column-gap: 25px;
+   }
+
+   .nosotros {
+        width: 85%;
+    }
+
+   .nosotros__title {
+        padding-top: 0.8em;
+        font-size: 22px;
+    }
+
+   .form {
+    width: 55%;
+    }
+}
+
+@media (min-width:1440px) {
+    
+    #servicios {
+        height: 680px;
+   }
+
+   .servicios {
+    width: 80%;
+    }
+
+    #obras {
+        justify-content: center;
+        grid-template-columns: 800px;
+    }
+
+    #obras #imagen {
+        height: 700px;
+    }
+
+    #obras #imagenB {
+        height: 700px;
+    }
+
+    .form {
+        width: 45%;
+    }
+}
+@media (min-width: 1900px) {
+    #servicios {
+        height: 700px;
+   }
+
+   .servicios {
+    width: 75%;
+    }
+
 }
