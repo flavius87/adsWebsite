@@ -1,2 +1,5 @@
 # Ignora imágenes y otros archivos
 assets
+gracias.html
+/phpmailer
+htaccess

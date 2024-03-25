@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Constructora de La Pampa. Proyectos Llave en Mano. Wood Frame. CASAS A MEDIDA">
+    <meta name="description" content="Construimos en La Pampa y La Plata. Proyectos Llave en Mano. Wood Frame. CASAS A MEDIDA">
     <title>ADS Construcción en Seco | Casas de Madera | La Pampa | La Plata</title>
+    <link rel="shortcut icon" href="/assets/icons/ads.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="canonical" href="https://adsconstruccionenseco.com.ar/">
 </head>
 
 <body>
@@ -169,10 +171,12 @@
                             estructura de madera,
                             construidas, por primera vez, con manos locales. </p>
                     </div>
-                    <picture class="nosotros__image">
-                        <source srcset="/assets/ads-construccion-en-seco.webp" type="image/webp">
-                        <img src="/assets/ads-construccion-en-seco.jpg" loading="lazy" alt="construcción llave en mano">
-                    </picture>
+                    <div class="nosotros__image">
+                        <picture>
+                            <source srcset="/assets/ads-construccion-en-seco.webp" type="image/webp">
+                            <img src="/assets/ads-construccion-en-seco.jpg" loading="lazy" alt="construcción llave en mano">
+                        </picture>
+                    </div>
                     <div class="nosotros__paragraph__b">
                         <p>Propusimos a nuestros clientes y vecinos, la posibilidad de contar con <span>viviendas de rápida
                             construcción</span>. A pesar de la inicial desconfianza
@@ -187,11 +191,12 @@
                             uno General San Martín y otro en La Plata</span>.
                         </p>
                     </div>
-                    <picture class="nosotros__image">
-                        <source srcset="/assets/ads-construccion-en-seco-la-plata.webp" type="image/webp">
-                        <img src="/assets/ads-construccion-en-seco-la-plata.jpg" loading="lazy" alt="construcción llave en mano">
-                    </picture>
-            
+                    <div class="nosotros__image">
+                        <picture>
+                            <source srcset="/assets/ads-construccion-en-seco-la-plata.webp" type="image/webp">
+                            <img src="/assets/ads-construccion-en-seco-la-plata.jpg" loading="lazy" alt="construcción llave en mano">
+                        </picture> 
+                    </div>
                     <div class="nosotros__paragraph__c">
                         <p>Mantenemos nuestras raíces en la carpintería original
                             y operamos con instalaciones y equipos dedicados en ambas ubicaciones.
@@ -205,7 +210,7 @@
 
         <section id="wood-frame">
             <div class="woodFrame">
-                <ul class="acordeon">
+                <ul class="acordeon container">
                     <li class="fade">
                         <h2 class="acordeon__title">¿Qué incluye una casa llave en mano?*</h2>
                         <div>
@@ -263,7 +268,7 @@
                         
                     </li>
                 </ul>
-                <ul class="acordeon-2">
+                <ul class="acordeon-2 container">
                     <li class="acordeon__items fade">
                         <h2 class="acordeon__title">Ventajas de las Casas de Madera</h2>
                         <p>La construcción en madera, particularmente el sistema Wood Frame, presenta una serie de
@@ -333,7 +338,7 @@
         <section id="contacto">
             <div class="title fade">¡Contactanos!</div>
             <div class="form container fade">
-                <form action="post">
+                <form action="contacto.php" method="POST">
                     <div>
                         <small></small>
                         <input type="text" name="name" id="name" required><span class="float__bar"></span>
@@ -377,7 +382,7 @@
                     </div>
 
                     <div class="button">
-                        <a type="submit" class="btn btn-send"><span>Enviar</span></a>
+                        <button type="submit" class="btn btn-send"><span>Enviar</span></button>
                     </div>
                 </form>
             </div>

@@ -41,6 +41,18 @@ a:hover {
     cursor: pointer;
 }
 
+button {
+    font-size: 15px;
+    color: #fff;
+}
+
+button:hover {
+    transition: .3s ease;
+    color: var(--ads-light);
+    cursor: pointer;
+}
+
+
 h1 {
     text-transform: uppercase;
 }
@@ -75,38 +87,6 @@ span {
     overflow: hidden;
     padding: 8px 0;
 }
-
-.shadow{
-    animation-name: fade;
-    animation-duration: .8s;    
-}
-
-@keyframes fade {
-    from {opacity: .4;}
-    to{opacity:1;}
-}
-
-.fadeIn {
-    opacity: 0;
-    animation: fadeIn .5s ease-in 1 forwards;
-  }
-
-.fadeOut {
-    opacity: 1;
-    animation: fadeOut .5s ease-out 1 forwards;
-}
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeOut {
-    to {
-      opacity: 0;
-    }
-  }
 
 /* Main */
 main {
@@ -511,20 +491,21 @@ header a {
 
 .nosotros__image {
     grid-row: 1;
-    overflow: hidden;
     width: 100%;
 }
 
 .nosotros__card img {
     width: 100%;
     padding-top: 1vw; 
-    padding-bottom: 1vw; 
+    padding-bottom: 1vw;
 }
 
 /* Wood frame */
 #wood-frame {
     display: grid;
     grid-area: wood-frame;
+    overflow-x: hidden;
+    background-color: var(--ads-brown);
 }
 
 .woodFrame {
@@ -854,6 +835,54 @@ footer #iconos img {
 .footer__developer a:hover {
     color: var(--ads-light);
 }
+
+/* Página de formulario enviado */
+.gracias {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding-top: 10em;
+    color: var(--ads-wood);
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+/* Efectos */
+
+.shadow{
+    animation-name: fade;
+    animation-duration: .8s;    
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to{opacity:1;}
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn .5s ease-in 1 forwards;
+  }
+
+.fadeOut {
+    opacity: 1;
+    overflow: hidden;
+    animation: fadeOut .5s ease-out 1 forwards;
+}
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
 
 @media (min-width:768px){ 
 
